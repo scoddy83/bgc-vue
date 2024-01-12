@@ -4,9 +4,8 @@ import { RouterLink } from 'vue-router'
 
 <template>
   <header>
-    <img alt="Basler Garde-Clique Logo" class="logo" src="@/assets/logo.svg" width="50" height="50" />
-
     <div class="wrapper">
+      <img alt="Basler Garde-Clique Logo" class="logo" src="@/assets/logo.svg" width="50" height="50" />
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/mitglieder">Mitglieder</RouterLink>
@@ -19,23 +18,30 @@ import { RouterLink } from 'vue-router'
 </template>
 
 <style scoped>
+@font-face {
+  font-family: LithosProBlack;
+  src: url(../assets/fonts/LithosPro-Black.otf);
+  font-weight: bold;
+}
+
 header {
   line-height: 1.5;
-  max-height: 10vh;
-  background-color: #ccc;
+  max-height: 100px;
+  width: 100%;
+  background-color: rgb(0, 0, 88, 0.8);
+  font-family: LithosProBlack;
+  position: fixed;
 }
 
 .logo {
-  display: block;
-  margin: 0 auto  0;
+  display: none;
 }
 
 nav {
   width: 100%;
-  font-size: 12px;
-  text-align: center;
+  font-size: 32px;
+  text-align: right;
   /*margin-top: 2rem;*/
-  background-color: #500;
 }
 
 nav a.router-link-exact-active {
@@ -43,7 +49,7 @@ nav a.router-link-exact-active {
 }
 
 nav a.router-link-exact-active:hover {
-  background-color: transparent;
+  background-color: #000099;
 }
 
 nav a {

@@ -1,8 +1,7 @@
 <script setup lang="ts">
+import Banner from '../components/BannerPicture.vue'
 </script>
 
 <template>
-  <main>
-    <h1>HomeView</h1>
-  </main>
+  <Banner />
 </template>
