@@ -1,20 +1,21 @@
 <script setup lang="ts">
-import { RouterLink } from 'vue-router'
 </script>
 
 <template>
   <header>
-    <div class="wrapper">
-      <img alt="Basler Garde-Clique Logo" class="logo" src="@/assets/logo.svg" width="50" height="50" />
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/mitglieder">Mitglieder</RouterLink>
-        <RouterLink to="/events">Events</RouterLink>
-        <RouterLink to="/lieder">Stygli</RouterLink>
-        <RouterLink to="/sujets">Sujets</RouterLink>
-      </nav>
+    <div class="navbar bg-base-100">
+      <div class="flex-1">
+        <img alt="Basler Garde-Clique Logo" class="logo" src="@/assets/logo.svg" width="50" height="50" />
+        <a class="btn btn-ghost text-xl">Basler Garde Clique</a>
+      </div>
+      <div class="flex-none">
+        <label for="my-drawer" class="btn btn-square btn-ghost">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"></path></svg>
+        </label>
+      </div>
     </div>
   </header>
+  
 </template>
 
 <style scoped>
@@ -28,7 +29,7 @@ header {
   line-height: 1.5;
   max-height: 100px;
   width: 100%;
-  background-color: rgb(0, 0, 88, 0.8);
+  background-color: rgb(0, 0, 88, 0.2);
   font-family: LithosProBlack;
   position: fixed;
 }
