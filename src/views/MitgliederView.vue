@@ -16,7 +16,7 @@
 
   const mitglieder = await sanity.fetch(query);
 
-  function imageUrlFor(source:string) {
+  function imageUrlFor(source:string) : any {
       return imageBuilder.image(source);
   }
 </script>
@@ -39,7 +39,7 @@
         </thead>
         <tbody>
           <!-- row  -->
-          <tr v-for="(mitglied, index) in mitglieder">
+          <tr v-for="mitglied in mitglieder" :key="mitglied">
             <td>
               <div class="flex items-center gap-3">
                 <div class="avatar">

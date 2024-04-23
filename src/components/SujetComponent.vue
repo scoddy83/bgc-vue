@@ -13,7 +13,7 @@
     'bild'
   ])
 
-  function imageUrlFor(source:string) {
+  function imageUrlFor(source:string) : any {
     return imageBuilder.image(source);
   }
 </script>
